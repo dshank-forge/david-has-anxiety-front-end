@@ -1,0 +1,21 @@
+.MuiCard-root {
+    color: blue;
+    /* font-style ; */
+    height: 457px;
+    width: 340px; 
+    /* margin-left: 100px; */
+}
+
+img {
+    border-width: 4px;
+    box-shadow: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+.imageDesc {
+    justify-content: center;
+    /* color: blue; */
+    transform: translate(500px, -200px);
+    word-wrap: normal;
+}
