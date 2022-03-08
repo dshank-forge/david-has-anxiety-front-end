@@ -3,6 +3,7 @@ import {Stack, Card} from "@mui/material";
 import "./Components.css";
 import essay from "../images/essay.jpg";
 import byMyOwnHand from "../images/by_my_own_hand.jpg";
+import whirlwind from "../images/WhirlwindGIF.gif";
 
 export const DavidsStoryTab = () => {
    return ( 
@@ -26,7 +27,7 @@ export const DavidsStoryTab = () => {
                <div className="imageDesc">Karmala and Sonamla welcomed David into their home.</div>
             </div>
             <div>
-               <Card>NFT 5</Card>
+               <Card><img src={whirlwind}></img></Card>
                <div className="imageDesc">David felt like he was in a dream- like the world was 
                sliding away.</div>
             </div>

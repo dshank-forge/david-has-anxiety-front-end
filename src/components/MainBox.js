@@ -23,6 +23,8 @@ export const MainBox = () => {
     }
     const [selectedTabIndex, setSelectedTabIndex] = useState(0)
 
+    // Try adding black lines between tabs to make it look like a folder
+
     return(
         <Box className="testBox">
             <TabContext value={selectedTabIndex.toString()}>

@@ -1,9 +1,19 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .MuiCard-root {
     color: blue;
     /* font-style ; */
     height: 457px;
     width: 340px; 
     /* margin-left: 100px; */
+}
+
+.connectButton {
+    justify-content: flex-end;
+    display: flex;
+    /* transform: translate(1100px, 0px); */
 }
 
 img {
