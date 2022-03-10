@@ -12,16 +12,18 @@ export const Header = () => {
     return ( 
         <div>
             { isConnected ? ( 
-                <>
-                <Button className="connectButton" variant="contained"
-                    onClick={deactivate}>
-                    Disconnect
-                </Button>
+                <div className="sideBySide">
+                    <Button variant="contained"
+                        onClick={ () => deactivate() }>
+                        Disconnect
+                    </Button>
                     <div>
-                        Account: {account}
-                        {formattedEtherBalance && <p>ETH Balance: {formattedEtherBalance} </p>}
+                        <b>Account:</b> {account}  
                     </div>
-                </>
+                    <div>
+                        <b>ETH Balance:</b> {formattedEtherBalance} 
+                    </div>
+                </div>
             ) : (
                 <Button className="connectButton" variant="contained" 
                     onClick={ () => activateBrowserWallet() }>

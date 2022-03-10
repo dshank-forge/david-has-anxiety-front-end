@@ -10,11 +10,10 @@
     /* margin-left: 100px; */
 }
 
-.connectButton {
+/* .connectButton {
     justify-content: flex-end;
     display: flex;
-    /* transform: translate(1100px, 0px); */
-}
+} */
 
 img {
     border-width: 4px;
@@ -23,9 +22,16 @@ img {
     width: 100%;
 }
 
-.imageDesc {
-    justify-content: center;
-    /* color: blue; */
-    transform: translate(500px, -200px);
-    word-wrap: normal;
+.sideBySide {
+    display: flex;
+    margin-right: 2%;
 }
+
+.sideBySide div {
+    margin-right: 2%;
+}
+
+.sideBySide button {
+    margin-right: 2%;
+} 
+

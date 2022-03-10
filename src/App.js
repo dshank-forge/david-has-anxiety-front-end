@@ -6,7 +6,7 @@ import {Header} from './components/Header';
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Kovan],
+      networks: [ChainId.Kovan],
       notifications: {
         expirationPeriod: 1000,
         checkInterval: 1000
