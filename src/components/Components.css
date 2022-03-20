@@ -35,3 +35,16 @@ img {
     margin-right: 2%;
 } 
 
+.nftsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    row-gap: 1cm;
+    column-gap: 1cm;
+}
+
+.nftsContainer img {
+    width: 8cm;
+}

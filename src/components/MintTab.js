@@ -2,6 +2,10 @@ import {useEthers} from '@usedapp/core';
 import {Button, Card} from "@mui/material";
 import "./Components.css";
 import essay from "../images/essay.jpg";
+import hand from "../images/by_my_own_hand.jpg"
+import twister from "../images/WhirlwindGIF.gif"
+
+const pictures = [ essay, hand, twister, essay, essay, essay, essay, essay]
 
 
 // NFT thumbnails / art
@@ -19,7 +23,7 @@ export const MintTab = () => {
       <div>
          { isConnected ?
             <Button variant="contained" color="secondary" size="large" 
-               onClick={ () => console.log('minted') }>
+               onClick={ () => alert('You minted an NFT!') }>
                Mint
             </Button>
             :
@@ -27,9 +31,13 @@ export const MintTab = () => {
                Mint
             </Button>
          }
-         <Card>
-            <img src={essay}></img>
-         </Card>
+         <div className='nftsContainer'>
+            { 
+               pictures.map( (picture, i) => 
+                  <img src={picture}></img>
+               )
+            }
+         </div>
       </div>
    )
 }
