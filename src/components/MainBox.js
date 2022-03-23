@@ -21,9 +21,9 @@ export const MainBox = () => {
         //         return null
         // }
     }
-    const [selectedTabIndex, setSelectedTabIndex] = useState(0)
+    const [selectedTabIndex, setSelectedTabIndex] = useState(1)
 
-    // Try adding black lines between tabs to make it look like a folder
+    // Try adding black lines between tabs to make it look like a folder 
 
     return(
         <Box className="testBox">
