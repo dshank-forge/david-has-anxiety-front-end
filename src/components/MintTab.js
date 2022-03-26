@@ -8,9 +8,23 @@ import twister from "../images/WhirlwindGIF.gif"
 const pictures = [ essay, hand, twister, essay, essay, essay, essay, essay]
 
 export const MintTab = () => {
+
+   const image1 = document.getElementById('image1');
+   
+   image1.addEventListener('mouseover', () => {
+      enlarge();
+   });
+   
+   function enlarge() {
+      // Event.preventDefault();
+      console.log('enlarge');
+   }
+
    const {account, activateBrowserWallet, deactivate} = useEthers()
 
    const isConnected = account !== undefined
+
+   // Try NFT container as a 4x2, increasing space between as needed when you expand it to a bigger box
 
    return (
       <div>
@@ -24,11 +38,12 @@ export const MintTab = () => {
                Mint
             </Button>
          }
+
          <div className='nftsContainer'>
             { 
                pictures.map( (picture, i) => 
-                  <div>
-                     <img src={picture}></img>
+                  <div key={i}>
+                     <img src={picture} id={`image${i}`}></img>
                   </div>
                )
             }
