@@ -39,12 +39,27 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    row-gap: 1cm;
-    column-gap: 1cm;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    /* row-gap: 1cm; */
+    /* column-gap: 3.4cm; */
 }
 
-.nftsContainer img {
+/* .nftsContainer img {
     width: 8cm;
+} */
+
+.largeImage {
+    width: 12cm;
 }
+
+.smallImage {
+    width: 6cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    margin-bottom: 4cm;
+}
+
+
+

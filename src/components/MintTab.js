@@ -1,23 +1,38 @@
+import {useState} from "react";
 import {useEthers} from '@usedapp/core';
 import {Button, Card} from "@mui/material";
 import "./Components.css";
 import essay from "../images/essay.jpg";
-import hand from "../images/by_my_own_hand.jpg"
-import twister from "../images/WhirlwindGIF.gif"
+import hand from "../images/by_my_own_hand.jpg";
+import twister from "../images/WhirlwindGIF.gif";
 
 const pictures = [ essay, hand, twister, essay, essay, essay, essay, essay]
 
 export const MintTab = () => {
 
-   const image1 = document.getElementById('image1');
-   
-   image1.addEventListener('mouseover', () => {
-      enlarge();
-   });
-   
-   function enlarge() {
-      // Event.preventDefault();
-      console.log('enlarge');
+   const [imageClass, setImageClass] = useState("smallImage")   
+
+   const enlargeImage = (e) => {
+      // console.log(e.target)
+      // console.log(largeImage)
+      const image = e.target
+
+      image.className = "largeImage"
+
+      // console.log(image)
+      // if (largeImage) {
+      //    console.log('image is large')
+      // } else {
+      //    console.log('image is small')
+      // }
+   }
+
+   const shrinkImage = (e) => {
+      const image = e.target
+
+      image.className = "smallImage"
+
+      // console.log('shrink')
    }
 
    const {account, activateBrowserWallet, deactivate} = useEthers()
@@ -43,7 +58,11 @@ export const MintTab = () => {
             { 
                pictures.map( (picture, i) => 
                   <div key={i}>
-                     <img src={picture} id={`image${i}`}></img>
+                     <img src={picture} id={`image${i}`}
+                        className="smallImage" 
+                        onMouseOver={enlargeImage} 
+                        onMouseOut={shrinkImage}>
+                     </img>
                   </div>
                )
             }
