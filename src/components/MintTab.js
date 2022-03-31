@@ -2,6 +2,7 @@ import {useState} from "react";
 import {useEthers} from '@usedapp/core';
 import {Button, Card} from "@mui/material";
 import "./Components.css";
+import { SinglePiece } from "./SinglePiece";
 import essay from "../images/essay.jpg";
 import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
@@ -67,6 +68,7 @@ export const MintTab = () => {
                )
             }
          </div>
+         <SinglePiece />
       </div>
    )
 }
