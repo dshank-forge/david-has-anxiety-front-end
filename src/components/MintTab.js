@@ -55,6 +55,8 @@ export const MintTab = () => {
             </Button>
          }
 
+         <SinglePiece />
+
          <div className='nftsContainer'>
             { 
                pictures.map( (picture, i) => 
@@ -68,7 +70,6 @@ export const MintTab = () => {
                )
             }
          </div>
-         <SinglePiece />
       </div>
    )
 }
