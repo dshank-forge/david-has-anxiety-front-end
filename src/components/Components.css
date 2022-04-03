@@ -62,6 +62,7 @@ img {
 }
 
 .mintNFTModal {
+    display: flex;
     position: fixed; 
     left: 25%;
     right: 25%;
@@ -70,6 +71,7 @@ img {
     height: 16cm;
     width: 14cm;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.6);
+    background-color: burlywood;
 }
 
 
