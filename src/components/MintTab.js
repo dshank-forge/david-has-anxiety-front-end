@@ -26,6 +26,7 @@ export const MintTab = () => {
    const [selectedNFTIndex, setSelectedNFTIndex] = useState(0)
 
    const enlargeImage = (e) => {
+      if (modalEnabled) return
       const image = e.target
       image.className = "largeImage"
    }
@@ -35,12 +36,8 @@ export const MintTab = () => {
       image.className = "smallImage"
    }
 
-   // const toggleModal = () => {
-   //    // console.log(e.target.id)
-   //    setModalEnabled(!modalEnabled)
-   // }
-
    const handleNFTClick = (e) => {
+      if (modalEnabled) return
       setSelectedNFTIndex(e.target.id)
       setModalEnabled(true)
    }
@@ -54,7 +51,7 @@ export const MintTab = () => {
 
    return (
       <div>
-         { isConnected ?
+         {/* { isConnected ?
             <Button variant="contained" color="secondary" size="large" 
                onClick={ () => alert('You minted an NFT!') }>
                Mint
@@ -63,7 +60,7 @@ export const MintTab = () => {
             <Button variant="contained" color="secondary" size="large" disabled>
                Mint
             </Button>
-         }
+         } */}
 
          <MintNFTModal index={selectedNFTIndex} modalEnabled={modalEnabled} setModalEnabled={setModalEnabled}/>
 

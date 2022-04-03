@@ -2,6 +2,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.mainBox {
+    background-color: pink;
+    border-radius: 20px;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .MuiCard-root {
     color: blue;
     /* font-style ; */
@@ -9,11 +16,6 @@
     width: 340px; 
     /* margin-left: 100px; */
 }
-
-/* .connectButton {
-    justify-content: flex-end;
-    display: flex;
-} */
 
 img {
     border-width: 4px;
@@ -52,6 +54,7 @@ img {
 
 .largeImage {
     width: 12cm;
+    height: auto;
 }
 
 .smallImage {
@@ -63,15 +66,17 @@ img {
 
 .mintNFTModal {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: fixed; 
     left: 25%;
     right: 25%;
-    top: 10%;
+    top: 5%;
     /* bottom: 25%; */
-    height: 16cm;
-    width: 14cm;
+    width: 17cm;
+    height: 17cm;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.6);
-    background-color: burlywood;
+    background-color:pink;
 }
 
 

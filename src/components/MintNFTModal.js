@@ -4,6 +4,7 @@ import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
 import covid from "../images/Covid-ThoughtsGIF.gif";
 import { useState } from "react";
+import { Button } from "@mui/material";
 
 export const MintNFTModal = ( mintNFTProps ) => {
     
@@ -36,7 +37,8 @@ export const MintNFTModal = ( mintNFTProps ) => {
             { modalEnabled  &&
                 <div className="mintNFTModal">
                     <img src={selectedNFTImage} className="largeImage"></img>
-                    <button onClick={handleExit}>Exit</button>
+                    <Button variant="contained">Mint</Button>
+                    <Button onClick={handleExit} variant="outlined">Exit</Button>
                 </div>
             }
         </>

@@ -1,7 +1,5 @@
 import {DAppProvider, ChainId} from '@usedapp/core';
-import {MainBox} from './components/MainBox';
-import {Header} from './components/Header';
-
+import {Main} from './components/Main';
 
 function App() {
   return (
@@ -12,8 +10,7 @@ function App() {
         checkInterval: 1000
       }
     }}>
-      <Header/>
-      <MainBox/>
+      <Main/>
     </DAppProvider>
   );
 }

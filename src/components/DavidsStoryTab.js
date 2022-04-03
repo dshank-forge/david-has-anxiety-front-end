@@ -11,8 +11,7 @@ export const DavidsStoryTab = () => {
          <Stack spacing={2} ml="10%">
             <div className="sideBySide">
                <Card className="left"><img src={byMyOwnHand}/></Card>
-               <div className="right">David had compulsive thoughts about his fingers getting cut 
-               off.</div>
+               <div className="right">David had compulsive thoughts about his fingers getting cut off. </div>
             </div>
             <div className="sideBySide">
                <Card><img src={essay}/></Card>
