@@ -3,6 +3,7 @@ import essay from "../images/essay.jpg";
 import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
 import covid from "../images/Covid-ThoughtsGIF.gif";
+import high from "../images/High-Times-FINAL.gif";
 import { useState } from "react";
 import { Button } from "@mui/material";
 
@@ -13,7 +14,7 @@ export const MintNFTModal = ( mintNFTProps ) => {
         1: covid, 
         2: twister, 
         3: hand, 
-        4: essay, 
+        4: high, 
         5: essay, 
         6: essay, 
         7: essay 
