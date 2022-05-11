@@ -6,6 +6,8 @@ import covid from "../images/Covid-ThoughtsGIF.gif";
 import high from "../images/High-Times-FINAL.gif";
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { useCall } from "@usedapp/core";
+import { Contract } from "@ethersproject/contracts";
 
 export const MintNFTModal = ( mintNFTProps ) => {
     
@@ -32,13 +34,24 @@ export const MintNFTModal = ( mintNFTProps ) => {
     const handleExit = () => {
         setModalEnabled(false)    
     }
+
+    const testMint = () => {
+        console.log('pressed the mint button') 
+        const myContract = new Contract
+        const myCall = {
+            contract: myContract,
+            method: 'helloWorld',
+            args: []
+        }
+        // const { value, error } = useCall( myCall )
+    }
     
     return (
         <> 
             { modalEnabled  &&
                 <div className="mintNFTModal">
                     <img src={selectedNFTImage} className="largeImage"></img>
-                    <Button variant="contained">Mint</Button>
+                    <Button onClick={testMint} variant="contained">Test Mint</Button>
                     <Button onClick={handleExit} variant="outlined">Exit</Button>
                 </div>
             }

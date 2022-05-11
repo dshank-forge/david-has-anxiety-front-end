@@ -4,7 +4,7 @@ import {Main} from './components/Main';
 function App() {
   return (
     <DAppProvider config={{
-      networks: [ChainId.Kovan],
+      networks: [ChainId.Kovan, ChainId.Rinkeby],
       notifications: {
         expirationPeriod: 1000,
         checkInterval: 1000
