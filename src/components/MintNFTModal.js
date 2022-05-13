@@ -4,6 +4,8 @@ import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
 import covid from "../images/Covid-ThoughtsGIF.gif";
 import high from "../images/High-Times-FINAL.gif";
+import beloved from "../images/Beloved.jpg";
+import DavidHasAnxietyToken from "../chain-info/build/contracts/DavidHasAnxietyToken.json"; 
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { useCall } from "@usedapp/core";
@@ -17,10 +19,21 @@ export const MintNFTModal = ( mintNFTProps ) => {
         2: twister, 
         3: hand, 
         4: high, 
-        5: essay, 
+        5: beloved, 
         6: essay, 
         7: essay 
     }
+
+    const address = "0xc8CdAa552401cf5C7AF9F5488c898C2f4C975Da4"
+    const abi = DavidHasAnxietyToken
+    const myContract = new Contract(address, abi)
+
+    const myCall = {
+        contract: myContract,
+        method: 'helloWorld',
+        args: []
+    }
+    const { value, error } = useCall( myCall )
 
     console.log(mintNFTProps)
 
@@ -37,13 +50,6 @@ export const MintNFTModal = ( mintNFTProps ) => {
 
     const testMint = () => {
         console.log('pressed the mint button') 
-        const myContract = new Contract
-        const myCall = {
-            contract: myContract,
-            method: 'helloWorld',
-            args: []
-        }
-        // const { value, error } = useCall( myCall )
     }
     
     return (

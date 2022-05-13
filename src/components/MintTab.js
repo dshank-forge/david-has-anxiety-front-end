@@ -8,6 +8,7 @@ import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
 import covid from "../images/Covid-ThoughtsGIF.gif";
 import high from "../images/High-Times-FINAL.gif";
+import beloved from "../images/Beloved.jpg";
 
 export const MintTab = () => {
 
@@ -17,7 +18,7 @@ export const MintTab = () => {
       2: twister, 
       3: hand, 
       4: high, 
-      5: essay, 
+      5: beloved, 
       6: essay, 
       7: essay 
    }

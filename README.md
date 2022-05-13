@@ -73,3 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * @usedapp/core
 * @mui/material
 * @mui/lab 
+
+### Managing Chain Info
+* Copying this info from contracts repository
+* For now, can keep this info hard-coded in a config file
+* Eventually, could keep the info loaded on IPFS or another service.
+
+Assumptions:
+* The address/ABI for the David Has Anxiety smart contract on Rinkeby will change semi-frequently during development
+* The address/ABI for the David Has Anxiety smart contract on Mainnet will change rarely if ever  

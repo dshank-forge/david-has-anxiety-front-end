@@ -6,6 +6,7 @@ import hand from "../images/by_my_own_hand.jpg";
 import twister from "../images/WhirlwindGIF.gif";
 import covid from "../images/Covid-ThoughtsGIF.gif";
 import high from "../images/High-Times-FINAL.gif";
+import beloved from "../images/Beloved.jpg";
 
 export const DavidsStoryTab = () => {
    return ( 
@@ -37,7 +38,7 @@ export const DavidsStoryTab = () => {
                <div className="imageDesc">David had a hard time stopping washing his hands.</div>
             </div>
             <div className="sideBySide">
-               <Card>NFT 7</Card>
+               <Card><img src={beloved}/></Card>
                <div className="imageDesc">David learned that he had a special Hebrew name.</div>
             </div>
             <div className="sideBySide">
