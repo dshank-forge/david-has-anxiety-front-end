@@ -5,6 +5,7 @@ import './Components.css';
 import { LovingKindnessTab } from "./LovingKindnessTab";
 import { MintTab } from "./MintTab";
 import { DavidsStoryTab } from "./DavidsStoryTab";
+import { HomeTab } from "./HomeTab";
 import { Header } from "./Header";
 
 export const Main = () => {
@@ -13,7 +14,7 @@ export const Main = () => {
         setSelectedTabIndex(newValue)
     }
 
-    const [selectedTabIndex, setSelectedTabIndex] = useState(1)
+    const [selectedTabIndex, setSelectedTabIndex] = useState(0)
 
     // Try adding black lines between tabs to make it look like a folder 
 
@@ -22,16 +23,19 @@ export const Main = () => {
             <Header/>
             <TabContext value={selectedTabIndex.toString()}>
                 <TabList onChange={handleChange}>
-                    <Tab label="Mint" value="0" key="0" />
+                    <Tab label="Home" value="0" key="0" />
                     <Tab label="David's Story" value="1" key="1" />
-                    <Tab label="Loving Kindness ❤️" value="2" key="2" />
+                    <Tab label="Mint" value="2" key="2" />
+                    <Tab label="Loving Kindness ❤️" value="3" key="3" />
                 </TabList>
                 <TabPanel value={selectedTabIndex.toString()} key={selectedTabIndex}>
                     {
                         {
-                            '0': <MintTab/>,
+                            '0': <HomeTab/>,
                             '1': <DavidsStoryTab/>,
-                            '2': <LovingKindnessTab/>,
+                            '2': <MintTab/>,
+                            '3': <LovingKindnessTab/>
+                            
                         }[selectedTabIndex.toString()]
                     }
                 </TabPanel>
