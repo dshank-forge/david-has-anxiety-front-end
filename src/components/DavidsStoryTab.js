@@ -11,6 +11,12 @@ import beloved from "../images/Beloved.jpg";
 export const DavidsStoryTab = () => {
    return ( 
       <div>
+         <div>
+            <h1>⚠️Trigger Warning- Please Note:</h1>
+            <h2>the David Has Anxiety project is meant to spread awareness around anxiety and de-stigmatize conversations about mental health. In order to accomplish this goal, this website displays artistic renditions of anxious experiences, which include graphic language and depictions of self-harm. Please proceed at your own pace and enjoy the artwork ❤️
+            </h2>
+         </div>
+         <p></p>
          <Stack spacing={2} ml="10%">
             <div className="sideBySide">
                <Card><img src={essay}/></Card>

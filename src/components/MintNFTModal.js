@@ -26,14 +26,14 @@ export const MintNFTModal = ( mintNFTProps ) => {
 
     const address = "0xc8CdAa552401cf5C7AF9F5488c898C2f4C975Da4"
     const abi = DavidHasAnxietyToken
-    const myContract = new Contract(address, abi)
+    // const myContract = new Contract(address, abi)
 
-    const myCall = {
-        contract: myContract,
-        method: 'helloWorld',
-        args: []
-    }
-    const { value, error } = useCall( myCall )
+    // const myCall = {
+    //     contract: myContract,
+    //     method: 'helloWorld',
+    //     args: []
+    // }
+    // const { value, error } = useCall( myCall )
 
     console.log(mintNFTProps)
 
