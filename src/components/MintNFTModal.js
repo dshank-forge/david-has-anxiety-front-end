@@ -13,16 +13,48 @@ import { useCall } from "@usedapp/core";
 import { Contract } from "@ethersproject/contracts";
 
 export const MintNFTModal = ( mintNFTProps ) => {
-    
+
     const pictures = {
-        0: essay, 
-        1: covid, 
-        2: twister, 
-        3: hand, 
-        4: high, 
-        5: beloved, 
-        6: essay, 
-        7: essay 
+        0: {    
+                "image": essay,
+                "artist": "Mendo",
+                "title": "Essay"
+            },
+        1: {    
+            "image": covid,
+            "artist": "Mendo",
+            "title": "Covid Thoughts"
+        },
+        2: {    
+            "image": twister,
+            "artist": "Mendo",
+            "title": "Whirlwind"
+        },  
+        3: {    
+            "image": hand,
+            "artist": "Mendo",
+            "title": "By My Own Hand"
+        },
+        4: {    
+            "image": high,
+            "artist": "Mendo",
+            "title": "High Times"
+        }, 
+        5: {    
+            "image": beloved,
+            "artist": "Mendo",
+            "title": "Beloved"
+        },  
+        6: {    
+            "image": essay,
+            "artist": "Mendo",
+            "title": "Placeholder"
+        },
+        7: {    
+            "image": essay,
+            "artist": "Mendo",
+            "title": "Placeholder"
+        },  
     }
 
     const address = "0xc8CdAa552401cf5C7AF9F5488c898C2f4C975Da4"
@@ -39,7 +71,7 @@ export const MintNFTModal = ( mintNFTProps ) => {
     console.log(mintNFTProps)
 
     const selectedNFTindex = mintNFTProps['index']
-    const selectedNFTImage = pictures[selectedNFTindex]
+    const selectedNFTImage = pictures[selectedNFTindex]["image"]
 
     const modalEnabled = mintNFTProps['modalEnabled']
     const setModalEnabled = mintNFTProps['setModalEnabled']
@@ -66,6 +98,9 @@ export const MintNFTModal = ( mintNFTProps ) => {
                     <div className="columnFlex">
                         <Button onClick={testMint} variant="contained">Test</Button>
                         <Button onClick={handleExit} variant="outlined">Exit</Button>
+                        <p></p>
+                        <div><b>Title:</b> <i>{pictures[selectedNFTindex]["title"]}</i></div>
+                        <div><b>Artist:</b> {pictures[selectedNFTindex]["artist"]}</div>
                     </div>
                 </div>
             }
