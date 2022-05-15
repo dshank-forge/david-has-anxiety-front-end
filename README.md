@@ -73,6 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * @usedapp/core
 * @mui/material
 * @mui/lab 
+* @mui/icons-material
 
 ### Managing Chain Info
 * Copying this info from contracts repository
@@ -82,3 +83,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Assumptions:
 * The address/ABI for the David Has Anxiety smart contract on Rinkeby will change semi-frequently during development
 * The address/ABI for the David Has Anxiety smart contract on Mainnet will change rarely if ever  
+
+## Bookmark: Figuring out CSS styling for the mint page so that it's a better UX on mobile.

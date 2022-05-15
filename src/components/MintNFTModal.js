@@ -7,7 +7,8 @@ import high from "../images/High-Times-FINAL.gif";
 import beloved from "../images/Beloved.jpg";
 import DavidHasAnxietyToken from "../chain-info/build/contracts/DavidHasAnxietyToken.json"; 
 import { useState } from "react";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 import { useCall } from "@usedapp/core";
 import { Contract } from "@ethersproject/contracts";
 
