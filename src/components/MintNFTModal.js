@@ -57,8 +57,13 @@ export const MintNFTModal = ( mintNFTProps ) => {
         <> 
             { modalEnabled  &&
                 <div className="mintNFTModal">
-                    <img src={selectedNFTImage} className="largeImage"></img>
-                    <div className="mintNFTModalButtons">
+                    <div className="columnFlex">
+                        <img src={selectedNFTImage} className="largeImage"></img>
+                        <IconButton onClick={handleExit}>
+                            <CloseIcon></CloseIcon>
+                        </IconButton>
+                    </div>
+                    <div className="columnFlex">
                         <Button onClick={testMint} variant="contained">Test</Button>
                         <Button onClick={handleExit} variant="outlined">Exit</Button>
                     </div>

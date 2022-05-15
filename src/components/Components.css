@@ -79,7 +79,7 @@ img {
     background-color:pink;
 }
 
-.mintNFTModalButtons {
+.columnFlex {
     display: flex;
     flex-direction: column;
 }
