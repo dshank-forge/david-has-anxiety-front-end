@@ -13,6 +13,10 @@ export const DavidsStoryTab = () => {
       <div>
          <Stack spacing={2} ml="10%">
             <div className="sideBySide">
+               <Card className="left"><img src={hand}/></Card>
+               <div className="right">David had compulsive thoughts about his fingers getting cut off. </div>
+            </div>
+            <div className="sideBySide">
                <Card><img src={essay}/></Card>
                <div className="imageDesc">David had academic anxiety.</div>
             </div>
@@ -21,11 +25,7 @@ export const DavidsStoryTab = () => {
                <div className="imageDesc">David had a panic attack when he got high.</div>
             </div>
             <div className="sideBySide">
-               <Card className="left"><img src={hand}/></Card>
-               <div className="right">David had compulsive thoughts about his fingers getting cut off. </div>
-            </div>
-            <div className="sideBySide">
-               <Card>NFT 4</Card>
+               <Card>Story from 2018: coming soon...</Card>
                <div className="imageDesc">Karmala and Sonamla welcomed David into their home.</div>
             </div>
             <div className="sideBySide">
@@ -42,7 +42,7 @@ export const DavidsStoryTab = () => {
                <div className="imageDesc">David learned that he had a special Hebrew name.</div>
             </div>
             <div className="sideBySide">
-               <Card>NFT 8</Card>
+               <Card>Story from 2022: coming soon...</Card>
                <div className="imageDesc">David worries compulsively about things in 
                his appartment.</div>
             </div>    
