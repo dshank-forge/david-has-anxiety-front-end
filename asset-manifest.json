@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/david-has-anxiety-front-end/static/css/main.47409995.css",
-    "main.js": "/david-has-anxiety-front-end/static/js/main.b40781e1.js",
+    "main.css": "/david-has-anxiety-front-end/static/css/main.e7b1bf5d.css",
+    "main.js": "/david-has-anxiety-front-end/static/js/main.e6f7fa31.js",
     "static/js/787.54b55374.chunk.js": "/david-has-anxiety-front-end/static/js/787.54b55374.chunk.js",
     "static/media/WhirlwindGIF.gif": "/david-has-anxiety-front-end/static/media/WhirlwindGIF.700988151ff30678df88.gif",
     "static/media/Beloved.jpg": "/david-has-anxiety-front-end/static/media/Beloved.084a51573575eb3fdd1c.jpg",
@@ -10,12 +10,12 @@
     "static/media/Covid-ThoughtsGIF.gif": "/david-has-anxiety-front-end/static/media/Covid-ThoughtsGIF.76739ee0b1cbb60a97dd.gif",
     "static/media/High-Times-FINAL.gif": "/david-has-anxiety-front-end/static/media/High-Times-FINAL.b8fa0dc613bc3c71b359.gif",
     "index.html": "/david-has-anxiety-front-end/index.html",
-    "main.47409995.css.map": "/david-has-anxiety-front-end/static/css/main.47409995.css.map",
-    "main.b40781e1.js.map": "/david-has-anxiety-front-end/static/js/main.b40781e1.js.map",
+    "main.e7b1bf5d.css.map": "/david-has-anxiety-front-end/static/css/main.e7b1bf5d.css.map",
+    "main.e6f7fa31.js.map": "/david-has-anxiety-front-end/static/js/main.e6f7fa31.js.map",
     "787.54b55374.chunk.js.map": "/david-has-anxiety-front-end/static/js/787.54b55374.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47409995.css",
-    "static/js/main.b40781e1.js"
+    "static/css/main.e7b1bf5d.css",
+    "static/js/main.e6f7fa31.js"
   ]
 }
