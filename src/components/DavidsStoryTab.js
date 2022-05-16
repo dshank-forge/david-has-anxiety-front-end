@@ -13,7 +13,7 @@ export const DavidsStoryTab = () => {
       <div>
          <Stack spacing={2} ml="10%">
             <div className="sideBySide">
-               <Card className="left"><img src={hand}/></Card>
+               <Card><img src={hand}/></Card>
                <div className="right">David had compulsive thoughts about his fingers getting cut off. </div>
             </div>
             <div className="sideBySide">
